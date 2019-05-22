@@ -4,13 +4,15 @@
 {% include "head.html" %}
 
 <body>
+    {% block header %}
+    {% include "header.html" %}
+    {% endblock %}
 
-    {% include 'header.html' %}
 
     {% if messages %}
         <ul class="messages">
             {% for message in messages %}
-            <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+            <li {% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
             {% endfor %}
         </ul>
     {% endif %}

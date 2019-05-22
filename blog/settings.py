@@ -33,6 +33,7 @@ INSTALLED_APPS = [
 
     'crispy_forms',
     'tinymce',
+    'widget_tweaks',
 
     'marketing',
     'posts'
@@ -131,7 +132,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static_in_env')]
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
@@ -169,10 +170,18 @@ MAILCHIMP_DATA_CENTER = ''
 MAILCHIMP_EMAIL_LIST_ID = ''
 
 # Django Allauth
+LOGIN_REDIRECT_URL = '/'  # Or whatever you want to redirect to after email verification
+ACCOUNT_LOGOUT_ON_GET = True
 
 AUTHENTICATION_BACKENDS = (
     'django.contrib.auth.backends.ModelBackend',
     'allauth.account.auth_backends.AuthenticationBackend'
 )
 
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
 SITE_ID = 1
+
+ACCOUNT_FORMS = {
+    'login': 'marketing.forms.MyCustomLoginForm',
+}

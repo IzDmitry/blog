@@ -4,6 +4,8 @@ from django.contrib import admin
 from django.urls import path, include
 
 from posts.views import (
+    contact,
+    about,
     index,
     search,
     post_list,
@@ -24,6 +26,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     # path('', index),
     path('', IndexView.as_view(), name='home'),
+    path('contact/', contact, name='contact'),
+    path('about-us/', about, name='about'),
     # path('blog/', post_list, name='post-list'),
     path('blog/', PostListView.as_view(), name='post-list'),
     path('search/', search, name='search'),
@@ -37,7 +41,7 @@ urlpatterns = [
     # path('post/<id>/delete/', post_delete, name='post-delete'),
     path('post/<pk>/delete/', PostDeleteView.as_view(), name='post-delete'),
     path('tinymce/', include('tinymce.urls')),
-    path('accounts/', include('allauth.urls'))
+    path('accounts/', include('allauth.urls')),
 ]
 
 if settings.DEBUG:

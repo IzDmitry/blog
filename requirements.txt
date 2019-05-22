@@ -2,11 +2,15 @@ astroid==2.1.0
 autopep8==1.4.3
 certifi==2019.3.9
 chardet==3.0.4
+colorama==0.4.1
 defusedxml==0.5.0
 Django==2.2
 django-allauth==0.39.1
+django-bootstrap-form==3.4
 django-crispy-forms==1.7.2
+django-forms-bootstrap==3.1.0
 django-tinymce4-lite==1.7.4
+django-widget-tweaks==1.4.3
 gunicorn==19.9.0
 idna==2.8
 isort==4.3.4

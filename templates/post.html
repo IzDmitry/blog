@@ -1,5 +1,8 @@
 {% extends 'base.html' %}
 {% load static %}
+{% block header %}
+{% include "headerblog.html" %}
+{% endblock %}
 
 {% block content %}
 
@@ -24,8 +27,11 @@
                     {% endfor %}
                   </div>
                   <div>
+                    {% if request.user.is_staff %}
                     <a href="{% url 'post-update' pk=post.pk %}">Update</a>
                     <a href="{% url 'post-delete' pk=post.pk %}">Delete</a>
+                    {% else %}
+                    {% endif %}
                   </div>
                 </div>
                 <h1>{{ post.title }}<a href="#"><i class="fa fa-bookmark-o"></i></a></h1>

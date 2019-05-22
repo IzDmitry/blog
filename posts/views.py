@@ -12,6 +12,12 @@ from marketing.models import Signup
 form = EmailSignupForm()
 
 
+def contact(request):
+        return render(request, 'contact.html')
+
+def about(request):
+        return render(request, 'about_us.html')
+
 def get_author(user):
     qs = Author.objects.filter(user=user)
     if qs.exists():
@@ -101,7 +107,7 @@ class PostListView(ListView):
     model = Post
     template_name = 'blog.html'
     context_object_name = 'queryset'
-    paginate_by = 1
+    paginate_by = 4
 
     def get_context_data(self, **kwargs):
         category_count = get_category_count()

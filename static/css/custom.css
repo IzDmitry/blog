@@ -1,0 +1,144 @@
+.jumbotron-index {
+  position:relative;
+  overflow:hidden;
+  background-image: url("https://i.ibb.co/7yTnhgJ/doroga-noch-svet-125999-1920x1080.jpg");
+  background-size: cover;
+}
+.jumbotron-contact {
+  position:relative;
+  overflow:hidden;
+  background-image: url("https://assets.bosch.com/media/global/contact/bosch-contact.jpg");
+  background-size: cover;
+}
+
+.jumbotron .container {
+  position:relative;
+  z-index:2;
+  
+  background:rgba(0,0,0,0.2);
+  padding:2rem;
+  border:1px solid rgba(0,0,0,0.1);
+  border-radius:3px;
+}
+
+img.blur {
+     -webkit-filter: blur(4px);
+     filter: blur(4px);
+  filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='4');
+
+}
+#footer {
+     padding-bottom: 40px;
+     margin-top: 40px;
+}
+ #footer .container {
+     padding-top: 80px;
+     border-top: 1px solid #F4f4f9;
+}
+ .footer-widget {
+     margin-bottom: 40px;
+}
+ .footer-widget .footer-title {
+     margin-bottom: 40px;
+     text-transform: capitalize;
+     font-size: 18px;
+}
+ .footer-widget a {
+     color: #2d2d2d;
+     -webkit-transition: 0.2s color;
+     transition: 0.2s color;
+}
+ .footer-widget a:hover, .footer-widget a:focus {
+     text-decoration: none;
+     color: #999999;
+}
+ .footer-logo {
+     margin-bottom: 40px;
+}
+ .footer-nav li {
+     display: inline-block;
+     margin-right: 15px;
+}
+ .footer-links li + li {
+     margin-top: 5px;
+}
+ .footer-copyright {
+     margin-top: 20px;
+     color: #a7b3c6;
+     font-size: 13px;
+}
+ .footer-newsletter form {
+     position: relative;
+}
+ .footer-newsletter form > input.input {
+     padding-right: 55px;
+}
+ .footer-newsletter form > .newsletter-btn {
+     position: absolute;
+     top: 0;
+     right: 0;
+     height: 40px;
+     line-height: 40px;
+     width: 40px;
+     text-align: center;
+     color: #a7b3c6;
+     background: transparent;
+     border: none;
+     border-radius: 0px 2px 2px 0px;
+     -webkit-transition: 0.2s opacity;
+     transition: 0.2s opacity;
+}
+ .footer-newsletter form > .newsletter-btn:hover {
+     opacity: 0.9;
+}
+ .footer-social {
+     margin-top: 20px;
+}
+ .footer-social li {
+     display: inline-block;
+     margin-right: 5px;
+}
+ .footer-social li > a {
+     display: block;
+     width: 30px;
+     height: 30px;
+     line-height: 30px;
+     text-align: center;
+     background-color: #000;
+     color: #FFF;
+     border-radius: 2px;
+     -webkit-transition: 0.2s opacity;
+     transition: 0.2s opacity;
+}
+ .footer-social li > a:hover, .footer-social li > a:focus {
+     color: #FFF;
+     opacity: 0.9;
+}
+ .footer-brand {
+  display: inline-block;
+  padding-top: 0.3125rem;
+  padding-bottom: 0.3125rem;
+  margin-right: 1rem;
+  font-size: 1.25rem;
+  line-height: inherit;
+  white-space: nowrap;
+  font-weight: bold;
+}
+ul,ol{
+     margin: 0;
+     padding: 0;
+     list-style: none 
+}
+ ul.list-style, ol.list-style {
+     padding-left: 15px;
+     margin-bottom: 10px;
+}
+ ul.list-style {
+     list-style-type: disc;
+}
+ ol.list-style {
+     list-style-type: decimal;
+}
+.col-lg-3 {
+    max-width: 25%;
+}
