@@ -11,9 +11,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'k*b$$!%hiswnhp2pad)6(u4x_g)r5w%@&zlv&@2hrz4#f3+#57'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1', '134.209.224.211']
+ALLOWED_HOSTS = ['127.0.0.1', '134.209.224.211','izdmitry.pythonanywhere.com']
 
 
 # Application definition
@@ -85,12 +85,11 @@ if DEBUG:
 else:
     DATABASES = {
         'default': {
-            'ENGINE': 'django.db.backends.postgresql_psycopg2',
-            'NAME': 'blogdb',
-            'USER': 'blog_admin',
-            'PASSWORD': 'testing123',
-            'HOST': 'localhost',
-            'PORT': '',
+            'ENGINE': 'django.db.backends.mysql',
+            'NAME': 'IzDmitry$blogdb',
+            'USER': 'IzDmitry',
+            'PASSWORD': 'Dizotov1',
+            'HOST': 'IzDmitry.mysql.pythonanywhere-services.com',
         }
     }
 
@@ -133,11 +132,10 @@ USE_TZ = True
 STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_ROOT = os.path.join(BASE_DIR, 'assets')
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # Tinymce
-
 TINYMCE_DEFAULT_CONFIG = {
     'cleanup_on_startup': True,
     'custom_undo_redo_levels': 20,

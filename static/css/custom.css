@@ -14,7 +14,7 @@
 .jumbotron .container {
   position:relative;
   z-index:2;
-  
+
   background:rgba(0,0,0,0.2);
   padding:2rem;
   border:1px solid rgba(0,0,0,0.1);
@@ -127,7 +127,7 @@ img.blur {
 ul,ol{
      margin: 0;
      padding: 0;
-     list-style: none 
+     list-style: none
 }
  ul.list-style, ol.list-style {
      padding-left: 15px;
@@ -138,7 +138,4 @@ ul,ol{
 }
  ol.list-style {
      list-style-type: decimal;
-}
-.col-lg-3 {
-    max-width: 25%;
 }
