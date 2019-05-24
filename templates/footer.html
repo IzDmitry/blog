@@ -1,4 +1,5 @@
 {% load static %}
+{% load account socialaccount %}
 <footer id="footer">
       <!-- container -->
       <div class="container">
@@ -52,6 +53,7 @@
             <div class="footer-widget">
               </div>
               <ul class="footer-social">
+                <li><a href="{% provider_login_url 'vk' method='oauth2' %}"><i class="fa fa-facebook"></i></a></li>
                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                 <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                 <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
