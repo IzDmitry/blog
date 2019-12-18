@@ -12,7 +12,7 @@ SECRET_KEY = 'k*b$$!%hiswnhp2pad)6(u4x_g)r5w%@&zlv&@2hrz4#f3+#57'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', '134.209.224.211','izdmitry.pythonanywhere.com']
+ALLOWED_HOSTS = ['10.42.0.1', '192.168.0.228', '127.0.0.1', '134.209.224.211','izdmitry.pythonanywhere.com']
 
 
 # Application definition
@@ -177,7 +177,7 @@ EMAIL_USE_TLS = True
 EMAIL_HOST = "smtp.gmail.com"
 EMAIL_PORT = 587
 EMAIL_HOST_USER = DEFAULT_FROM_EMAIL = 'izdmitry2@gmail.com'
-EMAIL_HOST_PASSWORD = 'Dizotov1dizotov'
+EMAIL_HOST_PASSWORD = 'djangoblog1'
 
 AUTHENTICATION_BACKENDS = (
     'django.contrib.auth.backends.ModelBackend',
